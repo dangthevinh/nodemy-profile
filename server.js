@@ -20,4 +20,6 @@ app.use('/api/task', taskRouter)
 app.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 })
-app.listen(3010)
+app.listen(process.env.PORT, function() {
+
+});
